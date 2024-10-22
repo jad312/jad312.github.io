@@ -24,15 +24,29 @@ body {
     height: 100vh; /* Full height */
 }
 
+/* Overlay to lighten the background image */
+.left::before {
+    content: "";
+    position: absolute; /* Positioning relative to the .left section */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5); /* White overlay with 50% opacity */
+    z-index: 0; /* Ensure the overlay is behind the title */
+}
+
 /* Title Styling */
 .title {
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #fff; /* White color for contrast */
-    text-align: center;
+    font-size: 2.5rem; /* Size of the title */
+    font-weight: bold; /* Make the title bold */
+    color: #200; /* Dark color for better contrast */
+    text-align: center; /* Center the text */
     position: absolute; /* Allows title to be placed over the background */
     z-index: 1; /* Ensures the title appears above other content */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow for better visibility */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* Optional: light shadow for contrast */
+}
+
 }
 
 /* Profile Image Styling (optional) */
