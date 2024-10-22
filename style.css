@@ -12,25 +12,34 @@ body {
 
 /* Left Section Styling */
 .left {
-   width: 50%;
+    width: 50%;
     background-image: url('https://github.com/jad312/jad312.github.io/blob/main/CHERISH Lab Logo_Mom Only.png?raw=true'); /* Replace with your image path */
     background-size: cover; /* Ensures the image covers the entire left section */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+    justify-content: center; /* Centers the title vertically */
+    align-items: center; /* Centers the title horizontally */
+    position: relative; /* Allows for absolute positioning of title */
+    height: 100vh; /* Full height */
 }
 
-
+/* Title Styling */
 .title {
     font-size: 2.5rem;
     font-weight: 600;
-    color: #333;
+    color: #fff; /* White color for contrast */
     text-align: center;
+    position: absolute; /* Allows title to be placed over the background */
+    z-index: 1; /* Ensures the title appears above other content */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow for better visibility */
 }
+
+/* Profile Image Styling (optional) */
+.profile-image {
+    display: none; /* Hide the profile image if you want the title only */
+}
+
 
 /* Right Section Styling */
 .right {
