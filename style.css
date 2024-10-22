@@ -11,13 +11,12 @@
 /* Container holding both sections */
 .container {
     display: flex;
-    flex-direction: row; /* Default to row layout for larger screens */
     height: 100vh;
 }
 
 /* Left Section Styling */
 .left {
-    flex: 1; /* Allows left section to take up available space */
+    width: 50%;
     background-image: url('https://github.com/jad312/jad312.github.io/blob/main/CHERISH Lab Logo_Mom Only.png?raw=true'); /* Replace with your image path */
     background-size: cover; /* Ensures the image covers the entire left section */
     background-position: center; /* Centers the image */
@@ -26,6 +25,7 @@
     justify-content: center; /* Centers the title vertically */
     align-items: center; /* Centers the title horizontally */
     position: relative; /* Allows for absolute positioning of title */
+    height: 100vh; /* Full height */
 }
 
 /* Overlay to lighten the background image */
@@ -59,7 +59,7 @@
 
 /* Right Section Styling */
 .right {
-    flex: 1; /* Allows right section to take up available space */
+    width: 50%;
     background-color: #355e3b; /* Dark green */
     color: #fff;
     padding: 20px;
@@ -115,19 +115,4 @@ nav ul li a:hover {
     font-size: 1rem;
     line-height: 1.5;
 }
-/* Media Queries for responsiveness */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Stack sections on small screens */
-        height: auto; /* Allow height to adjust based on content */
-    }
 
-    .left, .right {
-        width: 100%; /* Full width for each section */
-        height: auto; /* Allow height to adjust based on content */
-    }
-
-    .title {
-        font-size: 2rem; /* Adjust title size for smaller screens */
-    }
-}
