@@ -3,39 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Jessica A. Davis, PhD, RN, CCRN, IBCLC</title>   
-<style>
-        .image-container {
-            text-align: center; /* Centers the image horizontally */
-        }
-        .image-container img {
-            max-width: 50%; /* Resize image to 50% of its original size */
-            height: auto; /* Maintains the aspect ratio */
-        }
-    </style>
-    </head>
-   
-    <body>
-      <div class="image-container">
-          <img src="https://github.com/jad312/jad312.github.io/blob/main/CHERISH Lab Logo_Mom Only.png?raw=true" alt="The future CHERISH Lab" 
-    </div>
-
-    <h1>Optimizing Maternal-Child Health: Research, Education, and Practice for Lactation Goal Attainment</h1> 
-    <p>Welcome to my GitHub page! I’m Dr. Jess Davis, PhD, RN, CCRN, IBCLC (she/her). I am clinician scientist dedicated to advancing research in maternal and child health, particularly in the realms of lactation support to enhance long-term health. Here, you'll discover a curated selection of my projects that explore the vital role of breastfeeding in supporting infants with congenital heart conditions and the unique challenges faced by mothers and families.
-My work is rooted in understanding the experiences of families as they navigate the parenthood, with a special focus on those experiencing the complexities of caring for a child with a congenital heart defect. I aim to create community-centered interventions that empower mothers, enhance their breastfeeding journeys, and provide the support families need during these critical times. By integrating innovative support strategies, I strive to promote health equity and ensure that every family has access to the resources and care they deserve.
-Whether you’re a parent or family member, fellow researcher, healthcare professional, or someone passionate about improving maternal health, I invite you to explore, collaborate, and contribute to our mission of fostering healthier beginnings for all families. Let’s make a difference together!</p>
-    
-    
-    <h2>Resources</h2>
-    <ul>
-        <li><a href="map.html">The 412 Breastfeeding Resource Map</a></li>
-    </ul>
-    
-    <h3> Contact me:</h3>
-    <p>Jessica A. Davis
-        jad312@pitt.edu
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dr. Jessica A. Davis, PhD, RN, CCRN, IBCLC</title</title>
+      <p>
     NRSA HRSA T32 Postdoctoral Scholar
     Division of General Academic Pediatrics, Department of Pediatrics
     University of Pittsburgh School of Medicine</p>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Left Side (Image and Title) -->
+        <div class="left">
+            <img src="https://github.com/jad312/jad312.github.io/blob/main/CHERISH Lab Logo_Mom Only.png?raw=true" class="profile-image">
+            <h1 class="title">Optimizing Maternal-Child Health: Research, Education, and Practice for Lactation Goal Attainment</h1>
+        </div>
+
+  <!-- Right Side (Content, Links, and Body) -->
+        <div class="right">
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <h2 id="about">About Me</h2>
+                <p>I’m Dr. Jess Davis, PhD, RN, CCRN, IBCLC (she/her). I am clinician scientist dedicated to advancing research in maternal and child health, particularly in the realms of lactation support to enhance long-term health. Here, you'll discover a curated selection of my projects that explore the vital role of breastfeeding in supporting infants with congenital heart conditions and the unique challenges faced by mothers and families.
+My work is rooted in understanding the experiences of families as they navigate the parenthood, with a special focus on those experiencing the complexities of caring for a child with a congenital heart defect. I aim to create community-centered interventions that empower mothers, enhance their breastfeeding journeys, and provide the support families need during these critical times. By integrating innovative support strategies, I strive to promote health equity and ensure that every family has access to the resources and care they deserve.
+Whether you’re a parent or family member, fellow researcher, healthcare professional, or someone passionate about improving maternal health, I invite you to explore, collaborate, and contribute to our mission of fostering healthier beginnings for all families. Let’s make a difference together!
+                </p>
+
+                <h2 id="projects">Projects</h2>
+                <p>
+                    Here are some of the projects I'm working on.
+                     <ul>
+        <li><a href="map.html">The 412 Breastfeeding Resource Map</a></li>
+    </ul>
+                </p>
+
+                <h2 id="contact">Contact</h2>
+                <p>
+                    Feel free to reach out via email at <a href="mailto:jad312@pitt.edu">your-email@example.com</a>.
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+
+/* General styling */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Container holding both sections */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left Section Styling */
+.left {
+    width: 50%;
+    background-color: #f7f7f7; /* Light grey background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile-image {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+
+/* Right Section Styling */
+.right {
+    width: 50%;
+    background-color: #355e3b; /* Hunter green background */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Content Styling */
+.content {
+    margin-top: 20px;
+}
+
+.content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+
+
+
+
