@@ -47,8 +47,6 @@ body {
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* Optional: light shadow for contrast */
 }
 
-}
-
 /* Profile Image Styling (optional) */
 .profile-image {
     display: none; /* Hide the profile image if you want the title only */
@@ -58,7 +56,7 @@ body {
 /* Right Section Styling */
 .right {
     width: 50%;
-    background-color: #355e3b; /* Hunter green background */
+    background-color: #2C3E50; /* Hunter green background */
     color: #fff;
     padding: 20px;
     display: flex;
