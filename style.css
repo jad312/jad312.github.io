@@ -12,8 +12,11 @@ body {
 
 /* Left Section Styling */
 .left {
-    width: 50%;
-    background-color: #f7f7f7; /* Light grey background */
+   width: 50%;
+    background-image: url('your-background-image.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire left section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,11 +24,6 @@ body {
     padding: 20px;
 }
 
-.profile-image {
-    width: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
 
 .title {
     font-size: 2.5rem;
