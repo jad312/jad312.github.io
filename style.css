@@ -1,0 +1,81 @@
+/* General styling */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Container holding both sections */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left Section Styling */
+.left {
+    width: 50%;
+    background-color: #f7f7f7; /* Light grey background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile-image {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+
+/* Right Section Styling */
+.right {
+    width: 50%;
+    background-color: #355e3b; /* Hunter green background */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Content Styling */
+.content {
+    margin-top: 20px;
+}
+
+.content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
