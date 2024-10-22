@@ -11,6 +11,7 @@
 /* Container holding both sections */
 .container {
     display: flex;
+    flex-direction: row; /* Default to row layout for larger screens */
     height: 100vh;
 }
 
@@ -123,7 +124,7 @@ nav ul li a:hover {
 
     .left, .right {
         width: 100%; /* Full width for each section */
-        height: 50vh; /* Optional: Adjust height for better viewing */
+        height: auto; /* Allow height to adjust based on content */
     }
 
     .title {
