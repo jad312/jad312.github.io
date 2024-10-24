@@ -121,7 +121,20 @@ nav ul li a:hover {
     }
 
     .title {
-        font-size: 2rem; /* Adjust title size for smaller screens */
+        font-size: 1.8rem; /* Adjust title size for smaller screens */
+        padding: 10px; /* Add padding to avoid text getting too close to edges */
+    }
+
+    .content h2 {
+        font-size: 1.5rem; /* Adjust content heading size for smaller screens */
+    }
+
+    .content p {
+        font-size: 0.9rem; /* Slightly smaller text for mobile readability */
+    }
+
+    .right {
+        padding: 15px; /* Reduce padding on mobile for better use of space */
     }
 }
 
