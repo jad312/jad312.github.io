@@ -9,14 +9,14 @@ body {
 /* Container holding both sections */
 .container {
     display: flex;
-    min-height: 100vh; /* At least full height, but allows content to grow */
-    flex-direction: row; /* Default to side-by-side */
+    min-height: 100vh; /* Ensures full height but allows scrolling if needed */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
 /* Left Section Styling */
 .left {
-    width: 50%;
-    background-image: url('https://github.com/jad312/jad312.github.io/blob/main/CHERISH Lab Logo_Mom Only.png?raw=true'); /* Replace with your image path */
+    flex: 1;
+    background-image: url('https://github.com/jad312/jad312.github.io/blob/main/CHERISH%20Lab%20Logo_Mom%20Only.png?raw=true'); /* Replace with your image path */
     background-size: cover; /* Ensures the image covers the entire left section */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -24,6 +24,7 @@ body {
     justify-content: center; /* Centers the title vertically */
     align-items: center; /* Centers the title horizontally */
     position: relative; /* Allows for absolute positioning of title */
+    min-height: 50vh; /* Ensure it is at least 50% of the height on mobile */
 }
 
 /* Overlay to lighten the background image */
@@ -49,20 +50,16 @@ body {
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* Optional: light shadow for contrast */
 }
 
-/* Profile Image Styling (optional) */
-.profile-image {
-    display: none; /* Hide the profile image if you want the title only */
-}
-
 /* Right Section Styling */
 .right {
-    width: 50%;
+    flex: 1;
     background-color: #355e3b; /* Dark green */
     color: #fff;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-height: 50vh; /* Ensure it is at least 50% of the height on mobile */
 }
 
 /* Link Styling */
@@ -76,7 +73,7 @@ a:hover {
     text-decoration: underline; /* Optional: underline on hover */
 }
 
-/* Additional styles... */
+/* Navigation styling */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -115,14 +112,16 @@ nav ul li a:hover {
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* Stack sections vertically on small screens */
+        flex-direction: column; /* Stack sections vertically on smaller screens */
     }
 
     .left, .right {
         width: 100%; /* Full width for both sections on small screens */
+        min-height: auto; /* Allow the height to adjust based on content */
     }
 
     .title {
         font-size: 2rem; /* Adjust title size for smaller screens */
     }
 }
+
