@@ -1,12 +1,15 @@
 /* General styling */
 body {
     font-family: 'Libre Baskerville', serif; /* Apply the font to the body */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Container holding both sections */
 .container {
     display: flex;
-    height: 100vh;
+    min-height: 100vh; /* At least full height, but allows content to grow */
     flex-direction: row; /* Default to side-by-side */
 }
 
@@ -21,7 +24,6 @@ body {
     justify-content: center; /* Centers the title vertically */
     align-items: center; /* Centers the title horizontally */
     position: relative; /* Allows for absolute positioning of title */
-    height: 100vh; /* Full height */
 }
 
 /* Overlay to lighten the background image */
@@ -114,12 +116,10 @@ nav ul li a:hover {
 @media (max-width: 768px) {
     .container {
         flex-direction: column; /* Stack sections vertically on small screens */
-        height: auto; /* Allow the height to adjust based on content */
     }
 
     .left, .right {
         width: 100%; /* Full width for both sections on small screens */
-        height: auto; /* Allow height to adjust for the content */
     }
 
     .title {
