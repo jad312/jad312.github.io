@@ -1,0 +1,128 @@
+/* General styling */
+body {
+    font-family: 'Libre Baskerville', serif; /* Apply the font to the body */
+}
+
+/* Container holding both sections */
+.container {
+    display: flex;
+    height: 100vh;
+    flex-direction: row; /* Default to side-by-side */
+}
+
+/* Left Section Styling */
+.left {
+    width: 50%;
+    background-image: url('https://github.com/jad312/jad312.github.io/blob/main/CHERISH Lab Logo_Mom Only.png?raw=true'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire left section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    display: flex;
+    justify-content: center; /* Centers the title vertically */
+    align-items: center; /* Centers the title horizontally */
+    position: relative; /* Allows for absolute positioning of title */
+    height: 100vh; /* Full height */
+}
+
+/* Overlay to lighten the background image */
+.left::before {
+    content: "";
+    position: absolute; /* Positioning relative to the .left section */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5); /* White overlay with 50% opacity */
+    z-index: 0; /* Ensure the overlay is behind the title */
+}
+
+/* Title Styling */
+.title {
+    font-size: 2.5rem; /* Size of the title */
+    font-weight: bold; /* Make the title bold */
+    color: #200; /* Dark color for better contrast */
+    text-align: center; /* Center the text */
+    position: absolute; /* Allows title to be placed over the background */
+    z-index: 1; /* Ensures the title appears above other content */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* Optional: light shadow for contrast */
+}
+
+/* Profile Image Styling (optional) */
+.profile-image {
+    display: none; /* Hide the profile image if you want the title only */
+}
+
+/* Right Section Styling */
+.right {
+    width: 50%;
+    background-color: #355e3b; /* Dark green */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Link Styling */
+a {
+    color: #200; /* dark blue for links */
+    text-decoration: none; /* Removes underline */
+}
+
+a:hover {
+    color: #ADD8E6; /* Lighter blue on hover */
+    text-decoration: underline; /* Optional: underline on hover */
+}
+
+/* Additional styles... */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Content Styling */
+.content {
+    margin-top: 20px;
+}
+
+.content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack sections vertically on small screens */
+        height: auto; /* Allow the height to adjust based on content */
+    }
+
+    .left, .right {
+        width: 100%; /* Full width for both sections on small screens */
+        height: auto; /* Allow height to adjust for the content */
+    }
+
+    .title {
+        font-size: 2rem; /* Adjust title size for smaller screens */
+    }
+}
